@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.page__rating-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.5em;
+}
+.rating-card {
+  width: 320px;
+  height: 320px;
+  border-radius: 2em;
+  line-height: 1.5;
+  background-color: #fff;
+  &__star {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  &__title-text {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: rgb(0, 213, 255);
+  }
+  &__common-text {
+    font-size: 0.9em;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+  &__submit-btn {
+    width: 80%;
+    height: 2em;
+    border-radius: 3em;
+    font-size: 1.5em;
+  }
+  &__label {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+  }
+  &__radio-btn {
+    appearance: none;
+  }
+}
+.rating-card__label_hover {
+  transition: background-color 0.5s ease-in-out, color 0.25s ease-in-out;
+  &:hover {
+    color: #fff;
+    background-color: black;
+  }
+}
+.rating-card__submit-btn_hover {
+  transition: background-color 1s ease-in-out, color 0.5s ease-in-out,
+    scale 1.5s ease-in;
+  &:hover {
+    color: #fff;
+    background-color: black;
+    transform: scale(0.9);
+  }
+}
+.rating-card__label {
+}
+.rating-card__radio-btn {
+}
+.ratind-card__submit-btn {
+}
